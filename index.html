@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+    <div class="mainDiv">
+        <div class="centerDiv">
+            <h1>Typing Speed Test</h1>
+            <label for="username">Enter Your Name: </label>
+            <input type="text" id="username" placeholder="Your Name"><br><br>
+
+            <div>
+                <label for="timeSelect">Select Timer: </label>
+                <select id="timeSelect">
+                    <option value="60">60 Sec</option>
+                    <option value="90">90 Sec</option>
+                    <option value="120">120 Sec</option>
+                </select>
+            </div>
+
+            <h2 id="msg"></h2>
+            
+            <textarea id="mywords" cols="100" rows="10" placeholder="Click 'Start' and type the text that appears above..."></textarea>
+            
+            <button id="btn" class="mainBtn">Start</button>
+            <br>
+            <button id="downloadCertificate" class="hiddenBtn">Download Certificate</button>
+            <p id="timerDisplay">Time: 0:00</p><br>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
